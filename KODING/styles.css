@@ -1,0 +1,224 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #0d1b2a; /* Deeper Navy for better contrast */
+    background-color: #ffffff; /* White */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.photo-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #d4af37; /* Gold */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #0d1b2a; /* Deeper Navy */
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #0d1b2a; /* Deeper Navy */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+section h2 i {
+    margin-right: 10px;
+    color: #d4af37; /* Gold */
+}
+
+/* Data Diri Section */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.info-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.info-item strong {
+    color: #0d1b2a; /* Deeper Navy */
+    display: inline-block;
+    min-width: 200px;
+}
+
+.info-item a {
+    color: #d4af37; /* Gold */
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #d4af37; /* Gold */
+}
+
+.education-item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0d1b2a; /* Deeper Navy */
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ecf0f1;
+}
+
+.skill-category h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0d1b2a; /* Deeper Navy */
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skill-category li:before {
+    content: "•";
+    color: #d4af37; /* Gold */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Goals Section */
+.goals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.goal-item {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ecf0f1;
+}
+
+.goal-item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0d1b2a; /* Deeper Navy */
+    margin-bottom: 10px;
+}
+
+.goal-item p {
+    color: #34495e;
+}
+
+/* Personal Profile Section */
+#profil-pribadi p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #d4af37; /* Gold */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #ecf0f1;
+    color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .info-item strong {
+        min-width: 150px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .skills-grid,
+    .goals {
+        grid-template-columns: 1fr;
+    }
+}
